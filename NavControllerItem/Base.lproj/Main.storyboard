@@ -24,7 +24,7 @@
                             <barButtonItem title="Item" id="wPY-L1-qkY"/>
                             <barButtonItem title="Item" id="O5H-jj-CKq"/>
                         </leftBarButtonItems>
-                        <segmentedControl key="titleView" opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bar" selectedSegmentIndex="0" id="DAC-01-f2C">
+                        <segmentedControl key="titleView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bar" selectedSegmentIndex="0" id="DAC-01-f2C">
                             <rect key="frame" x="131" y="40" width="131" height="32"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <segments>
@@ -55,12 +55,32 @@
             <objects>
                 <viewController id="VV7-Mi-P58" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" title="Title" id="BJ5-NN-vcd">
-                        <barButtonItem key="rightBarButtonItem" systemItem="camera" id="kIt-b7-IVC"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="camera" id="kIt-b7-IVC">
+                            <connections>
+                                <segue destination="Hz8-hF-A1p" kind="show" id="PpU-re-Ake"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Mvh-K6-0tC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1749" y="4"/>
+        </scene>
+        <!--View Controller2-->
+        <scene sceneID="ekk-Yd-hJC">
+            <objects>
+                <viewController id="Hz8-hF-A1p" customClass="ViewController2" customModule="NavControllerItem" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="846-sy-MPf">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="zLZ-pG-qSj"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="OoC-zM-Sv9"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3sv-pA-ZvN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2480" y="4"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Lz7-OU-M5J">
