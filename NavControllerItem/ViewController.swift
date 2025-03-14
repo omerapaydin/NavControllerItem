@@ -12,7 +12,15 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        
+        let image = UIImage(named: "navBaslik")!
+        
+        self.navigationItem.titleView = UIImageView(image: image)
+        
+        
     }
+    
+    
 
 
 }
