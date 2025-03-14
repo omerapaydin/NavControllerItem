@@ -8,7 +8,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Başlık-->
+        <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="NavControllerItem" customModuleProvider="target" sceneMemberID="viewController">
@@ -18,11 +18,23 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Başlık" prompt="Açıklama" id="5Hy-tV-DPJ">
+                    <navigationItem key="navigationItem" prompt="Açıklama" id="5Hy-tV-DPJ">
+                        <nil key="title"/>
                         <leftBarButtonItems>
                             <barButtonItem title="Item" id="wPY-L1-qkY"/>
                             <barButtonItem title="Item" id="O5H-jj-CKq"/>
                         </leftBarButtonItems>
+                        <segmentedControl key="titleView" opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bar" selectedSegmentIndex="0" id="DAC-01-f2C">
+                            <rect key="frame" x="131" y="40" width="131" height="32"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <segments>
+                                <segment title="First"/>
+                                <segment title="Second"/>
+                            </segments>
+                            <connections>
+                                <action selector="segmentTik:" destination="BYZ-38-t0r" eventType="valueChanged" id="7UY-cg-1hr"/>
+                            </connections>
+                        </segmentedControl>
                         <rightBarButtonItems>
                             <barButtonItem title="Item" id="qrt-t5-Pey"/>
                             <barButtonItem title="Ekle" id="6es-ac-U1m">
